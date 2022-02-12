@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 class SplashPage extends StatelessWidget {
   const SplashPage({Key? key}) : super(key: key);
@@ -6,10 +7,17 @@ class SplashPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Splash'),
+      body: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 48.0),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: const <Widget>[
+            Icon(MdiIcons.github, size: 150),
+            SizedBox(height: 16),
+            LinearProgressIndicator(),
+          ],
+        ),
       ),
-      body: Text("Splash"),
     );
   }
 }
