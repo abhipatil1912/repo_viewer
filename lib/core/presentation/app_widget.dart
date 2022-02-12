@@ -1,20 +1,18 @@
 import 'package:flutter/material.dart';
 
+import '../routes/app_router.dart';
+
 class AppWidget extends StatelessWidget {
-  const AppWidget({Key? key}) : super(key: key);
+  AppWidget({Key? key}) : super(key: key);
+
+  final appRouter = AppRouter();
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       title: 'Repo Viewer',
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Title'),
-        ),
-        body: const Center(
-          child: Text("HI"),
-        ),
-      ),
+      routerDelegate: appRouter.delegate(),
+      routeInformationParser: appRouter.defaultRouteParser(),
     );
   }
 }
