@@ -8,3 +8,4 @@ analyzer:
     invalid_use_of_protected_member: error
     parameter_assignments: error
     sort_unnamed_constructors_first: ignore
+    always_use_package_imports: ignore

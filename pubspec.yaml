@@ -19,6 +19,7 @@ dependencies:
   flutter_secure_storage: ^5.0.2
   freezed_annotation: ^1.1.0
   hooks_riverpod: ^1.0.3
+  http: ^0.13.4
   oauth2: ^2.0.0
   webview_flutter: ^3.0.0
 
